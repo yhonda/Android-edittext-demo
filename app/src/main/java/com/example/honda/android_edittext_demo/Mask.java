@@ -9,6 +9,10 @@ public class Mask {
 
         StringBuilder stringBuilder = new StringBuilder();
 
+        if (text == null){
+            return text;
+        }
+
         if (text.length() < unMaskTextCount) {
             return text;
         }
