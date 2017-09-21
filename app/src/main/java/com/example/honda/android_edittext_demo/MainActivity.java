@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
         userIDEditText.setText(mMask.maskText(mSharedPreferences.getString(Constants.SP_LOGIN_USER_ID,null)));
         passwordEditText.setText(mSharedPreferences.getString(Constants.SP_LOGIN_USER_PASSWORD,null));
+        passwordEditText.requestFocus();
 
         userIDEditText.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
